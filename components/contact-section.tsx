@@ -28,12 +28,13 @@ export default function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    SendInviteMail({
+    const emailInvit = SendInviteMail({
       email: formData.email,
       name: formData.name,
       object: formData.subject,
       description: formData.message,
     })
+    console.log("emailInvit: " , emailInvit)
     // Logique d'envoi du formulaire
     // Réinitialiser le formulaire
     setFormData({
