@@ -7,10 +7,11 @@ import ContactSection from "@/components/contact-section"
 import ExperienceSection from "@/components/experience-section"
 
 export const metadata: Metadata = {
-  title: "Kengne Ronny Calin | Développeur Fullstack en Devenir",
+  title:
+    "Faha fosso Christ",
   description:
-    "Portfolio de Kengne Ronny , développeur fullstack en Devenir React Next.js et Angular",
-}
+    "Portfolio de Faha Fosso  , Développeur Fullstack et Pentester Web en devenir",
+};
 
 export default function Home() {
   return (

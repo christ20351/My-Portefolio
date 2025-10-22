@@ -31,7 +31,7 @@ export default function HeroSection() {
 
   const handleDownloadCV = () => {
     // Le lien vers votre CV sera à remplacer par le vrai lien
-    const cvUrl = "/cv/CV_Kengne_Tchankuigne_Ronny_Calin.pdf";
+    const cvUrl = "/cv/mon CV.pdf.jpg";
 
     // Création d'un élément a temporaire pour déclencher le téléchargement
     const link = document.createElement("a");
