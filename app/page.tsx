@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "Portfolio de Faha Fosso  , Développeur Fullstack et Pentester Web en devenir",
   icons: {
-    icon: "/cv/mon CV.pdf.jpg", // Chemin relatif à /public
+    icon: "/photo.jpg", // Chemin relatif à /public
   },
 };
 

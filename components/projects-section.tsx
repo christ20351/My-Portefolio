@@ -35,7 +35,7 @@ export default function ProjectsSection() {
       title: "Application Mobile de consultation medicale assiste par IA",
       description:
         "Application permettant d'ameliorer la prise de consultation dans les hopitaux, et aussi le suivie medicale des patients par les professionnels de sante avec l'interlligence artificielle",
-      image: "",
+      image: "/notImage.png",
       tags: [
         "React Native",
         "PostegreSQL",
@@ -53,7 +53,7 @@ export default function ProjectsSection() {
       title: "Application Medicale de Gestion de produits Medicaux",
       description:
         "Application permettant aux pharmacien de meiux gerer les stock de produits dans leur pharmacies ,  et d'etre avertit en cas de rupture",
-      image: "",
+      image: "/notImage.png",
       tags: ["Spring boot", "MySQL", "Java"],
       category: "fullstack",
       github: "https://github/christ20351/Locam",
