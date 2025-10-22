@@ -7,10 +7,12 @@ import ContactSection from "@/components/contact-section"
 import ExperienceSection from "@/components/experience-section"
 
 export const metadata: Metadata = {
-  title:
-    "Faha fosso Christ",
+  title: "2FC",
   description:
     "Portfolio de Faha Fosso  , Développeur Fullstack et Pentester Web en devenir",
+  icons: {
+    icon: "/cv/mon CV.pdf.jpg", // Chemin relatif à /public
+  },
 };
 
 export default function Home() {

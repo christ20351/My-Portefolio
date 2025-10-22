@@ -18,7 +18,7 @@ export default function ProjectsSection() {
       title: "App de Ecommerce",
       description:
         "Application d'achat en  ligne au pres de vendeurs ,  qui proposent leur produits varies",
-      image: "/banner-seachwork.png",
+      image: "/yarid.png",
       tags: [
         "Nextjs",
         "Nodejs",
