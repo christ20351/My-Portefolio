@@ -10,6 +10,8 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
+import { Sen } from "next/font/google"
+import { SendInviteMail } from "./invit"
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -26,8 +28,13 @@ export default function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
+    SendInviteMail({
+      email: formData.email,
+      name: formData.name,
+      object: formData.subject,
+      description: formData.message,
+    })
     // Logique d'envoi du formulaire
-    console.log(formData)
     // Réinitialiser le formulaire
     setFormData({
       name: "",
@@ -187,7 +194,7 @@ export default function ContactSection() {
                     />
                   </div>
 
-                  <Button type="submit" className="w-full">
+                  <Button type="submit" className="w-full" onClick={handleSubmit}>
                     <Send className="h-4 w-4 mr-2" />
                     Envoyer le message
                   </Button>
