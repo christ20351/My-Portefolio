@@ -1,16 +1,6 @@
 # My Portfolio
 
-## Redesign Tech - SpaceX / Tesla Style
+## Christ20351 - Développeur Full Stack & Passionné Cybersécurité
 
-Portfolio personnel moderne et futuriste.
+Passionné par l'innovation technologique et la cybersécurité, je crée des solutions robustes qui allient performance et élégance. De **VIGIL**, mon outil de surveillance avancé, aux interfaces intuitives premium, je transforme des idées complexes en expériences digitales haut de gamme.
 
-### Intro
-Passionné par l'innovation technologique et la cybersécurité, je crée des solutions robustes qui allient performance et élégance. De **VIGIL**, mon outil de surveillance avancé, aux interfaces intuitives, je transforme des idées complexes en expériences digitales premium.
-
-### Projets
-**VIGIL** - Outil de surveillance multi-plateforme
-- Surveillance en temps réel
-- Dashboard avancé
-- Multi OS support
-
-Contact : tonemail@example.com (remplace par ton vrai email)
