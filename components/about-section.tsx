@@ -1,24 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Code2,
-  Database,
-  Layout,
-  Server,
-  Sparkles,
-  Terminal,
-} from "lucide-react";
+import { Database } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import {
-  FaAngular,
   FaJava,
   FaJs,
   FaNodeJs,
   FaPython,
   FaRust,
 } from "react-icons/fa";
-import { SiHtml5, SiTypescript, SiCss3 } from "react-icons/si";
+import { SiHtml5, SiCss3 } from "react-icons/si";
 import {
   RiTailwindCssFill,
   RiNextjsLine,
@@ -30,15 +22,16 @@ export default function AboutSection() {
   const skills = [
     { name: "HTML5", icon: <SiHtml5 className="h-5 w-5" /> },
     { name: "CSS3", icon: <SiCss3 className="h-5 w-5" /> },
-    { name: "Javascript", icon: <FaJs className="h-5 w-5" /> },
+    { name: "JavaScript", icon: <FaJs className="h-5 w-5" /> },
+    { name: "TypeScript", icon: <SiHtml5 className="h-5 w-5" /> },
     { name: "Java", icon: <FaJava className="h-5 w-5" /> },
     { name: "Python", icon: <FaPython className="h-5 w-5" /> },
     { name: "Rust", icon: <FaRust className="h-5 w-5" /> },
     { name: "SQL", icon: <Database className="h-5 w-5" /> },
     { name: "React Native", icon: <RiReactjsFill className="h-5 w-5" /> },
-    { name: "ReactJs", icon: <RiReactjsLine className="h-5 w-5" /> },
+    { name: "React", icon: <RiReactjsLine className="h-5 w-5" /> },
     { name: "Next.js", icon: <RiNextjsLine className="h-5 w-5" /> },
-    { name: "Nodejs", icon: <FaNodeJs className="h-5 w-5" /> },
+    { name: "Node.js", icon: <FaNodeJs className="h-5 w-5" /> },
     { name: "Tailwind CSS", icon: <RiTailwindCssFill className="h-5 w-5" /> },
   ];
 
@@ -46,9 +39,7 @@ export default function AboutSection() {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
+      transition: { staggerChildren: 0.1 },
     },
   };
 
@@ -79,9 +70,8 @@ export default function AboutSection() {
             <span className="h-px w-8 bg-primary"></span>
           </div>
           <p className="max-w-2xl text-muted-foreground">
-            Passionné par le monde de la tech et l&apos;IT, je me sert de ma
-            curiosite et de mon inventivité pour repondre aux besoins de mon
-            entourage
+            Passionné par la tech et l&apos;IT, j&apos;utilise ma curiosité et mon inventivité
+            pour résoudre des problèmes concrets et créer de la valeur.
           </p>
         </motion.div>
 
@@ -100,28 +90,19 @@ export default function AboutSection() {
               </h3>
             </div>
             <p className="text-muted-foreground">
-              Presentement étudiant en 3e année filiere Systemes et Reseaux à
-              l&apos;IAI Cameroun, je restes neanmoins dubitatif entre le
-              développement web,la cybersecurité(pentesting Web) et la
-              datascience. Oui je suis tres dubitatif 😅. Qu'a cela ne tienne je
-              suis en perpetuelle quete de savoir, et dans cette quete j'ai deja
-              fait la decouverte de quelques frameworks comme React, Nex.js et
-              aussi de language complexe comme Rust.
+              Étudiant en 3e année filière Systèmes et Réseaux à l&apos;IAI Cameroun,
+              je me forme activement en développement web, cybersécurité (pentesting web)
+              et data science. J&apos;ai découvert des frameworks modernes comme React et Next.js,
+              ainsi que des langages exigeants comme Rust.
             </p>
             <p className="text-muted-foreground">
-              En plus de mon parcours académique, je suis également en pleine
-              insertion professionnelle. Je travaille en tant que développeur
-              Backend Freelance chez Yarid Company. Ces expériences m&apos;ont
-              permis de toucher du bout des doigts la realité de ce monde
-              impitoyable. Entre deadline serrés et rigueur à la tache,
-              j'apprends tous les jours
+              En parallèle de mes études, je travaille comme développeur Backend freelance
+              chez Yarid Company. Ces expériences m&apos;ont confronté aux réalités du terrain :
+              deadlines, rigueur et travail d&apos;équipe.
             </p>
             <p className="text-muted-foreground">
-              En parallèle de mes études, je m'interesse fortement au pentesting
-              Web ou je me formes d'ailleurs actuellement et aux prouesses de
-              l'intelligence artificielle et qui sera tres important et
-              representera un veritable atout dans la communaute technologique
-              du monde de demain , à l'age de l'AGI.
+              Je me forme également au pentesting web et je m&apos;intéresse de près à
+              l&apos;intelligence artificielle, un domaine qui sera déterminant dans les années à venir.
             </p>
             <div className="relative pt-4">
               <h3 className="text-2xl font-bold inline-block">
@@ -132,10 +113,11 @@ export default function AboutSection() {
             <ul className="grid grid-cols-2 gap-4">
               {[
                 "Leadership",
-                "Enthousiaste",
+                "Enthousiasme",
                 "Autonomie",
                 "Esprit d'équipe",
-                "Adaptabilite"
+                "Adaptabilité",
+                "Persévérance",
               ].map((value, index) => (
                 <li key={index} className="flex items-center gap-2">
                   <div className="h-2 w-2 bg-gradient-to-r from-primary to-accent rounded-full"></div>

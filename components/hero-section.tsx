@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Github, Linkedin, Facebook } from "lucide-react";
+import { ArrowRight, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function HeroSection() {
@@ -30,28 +30,24 @@ export default function HeroSection() {
   }, []);
 
   const handleDownloadCV = () => {
-    // Le lien vers votre CV sera à remplacer par le vrai lien
     const cvUrl = "/cv/mon CV.pdf.jpg";
-
-    // Création d'un élément a temporaire pour déclencher le téléchargement
     const link = document.createElement("a");
     link.href = cvUrl;
-    link.setAttribute("download", "CV-Kengne-Tchankuigne-Ronny-Calin.pdf");
+    link.setAttribute("download", "CV-Christ-Fosso.pdf");
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
+
   return (
     <section
       id="accueil"
       className="relative w-full py-24 md:py-32 overflow-hidden"
     >
-      {/* Background elements */}
       <div className="absolute inset-0 bg-mesh-pattern opacity-30"></div>
       <div className="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-10 right-10 w-72 h-72 bg-secondary/10 rounded-full blur-3xl"></div>
 
-      {/* Floating shapes */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 0.5, y: 0 }}
@@ -69,17 +65,6 @@ export default function HeroSection() {
         }}
         className="absolute top-60 right-[15%] w-6 h-6 bg-accent/30 rotate-45"
       />
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 0.3, y: 0 }}
-        transition={{
-          duration: 1.5,
-          delay: 0.4,
-          repeat: Infinity,
-          repeatType: "reverse",
-        }}
-        className="absolute bottom-40 left-[20%] w-10 h-10 bg-secondary/20 triangle"
-      />
 
       <div className="container relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -96,7 +81,7 @@ export default function HeroSection() {
                 transition={{ delay: 0.2, duration: 0.5 }}
                 className="inline-block px-3 py-1 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 text-sm font-medium border border-primary/20"
               >
-                <span className="text-gradient">Développeur FullStack</span>
+                <span className="text-gradient">Développeur Full-Stack & Cybersécurité</span>
               </motion.div>
               <motion.h1
                 initial={{ opacity: 0 }}
@@ -104,8 +89,8 @@ export default function HeroSection() {
                 transition={{ delay: 0.3, duration: 0.5 }}
                 className="text-4xl md:text-5xl lg:text-6xl space-y-1.5 font-bold tracking-tight"
               >
-                <span className="relative ">Faha Fosso</span>{" "}
-                <span className="text-gradient ">Christ</span>
+                <span className="relative">Christ</span>{" "}
+                <span className="text-gradient">Fosso</span>
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0 }}
@@ -113,10 +98,9 @@ export default function HeroSection() {
                 transition={{ delay: 0.4, duration: 0.5 }}
                 className="text-xl md:text-2xl text-muted-foreground mt-4"
               >
-                Je fais de{" "}
-                <span className="text-primary font-semibold">Vos reves</span>{" "}
-                des <span className="text-accent font-semibold">realités</span>{" "}
-                numeriques exceptionnelles
+                Je transforme vos idées en{" "}
+                <span className="text-primary font-semibold">solutions numériques</span>{" "}
+                robustes et élégantes
               </motion.p>
             </div>
 
@@ -126,9 +110,9 @@ export default function HeroSection() {
               transition={{ delay: 0.5, duration: 0.5 }}
               className="text-muted-foreground max-w-md"
             >
-              Étudiant en 3e année, Filiere Systeme et Reseaux à l&apos;L'Institut
-              Africaine D'Informatique (IAI) et développeur web junior,
-              passionné par le développement web, le pentesting Web et l'Intelligence Artificielle. 
+              Étudiant en 3e année Systèmes et Réseaux à l&apos;Institut Africain d&apos;Informatique (IAI),
+              développeur web junior passionné par le développement full-stack, le pentesting web
+              et l&apos;intelligence artificielle.
             </motion.p>
 
             <motion.div
@@ -137,12 +121,13 @@ export default function HeroSection() {
               transition={{ delay: 0.6, duration: 0.5 }}
               className="flex flex-wrap gap-4"
             >
-              <Button size="lg" className="group relative overflow-hidden">
-                <span className="relative z-10 flex items-center">
-                  <a href="#contact">Me contacter</a>
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </span>
-                <span className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              <Button size="lg" className="group relative overflow-hidden" asChild>
+                <a href="#contact">
+                  <span className="relative z-10 flex items-center">
+                    Me contacter
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </a>
               </Button>
               <Button
                 size="lg"
@@ -150,7 +135,7 @@ export default function HeroSection() {
                 className="border-primary/30 hover:border-primary/80 transition-colors"
                 onClick={handleDownloadCV}
               >
-                Voir mon CV
+                Télécharger mon CV
               </Button>
             </motion.div>
 
@@ -192,7 +177,7 @@ export default function HeroSection() {
             <div className="relative h-full w-full blob overflow-hidden border-4 border-background shadow-xl">
               <Image
                 src="/photo.jpg"
-                alt="Kengne Tchankuigne Ronny Calin"
+                alt="Christ Fosso"
                 width={500}
                 height={500}
                 className="object-cover"
@@ -200,15 +185,10 @@ export default function HeroSection() {
               />
             </div>
 
-            {/* Decorative elements */}
             <div className="absolute -top-4 -right-4 w-12 h-12 bg-primary/30 rounded-full blur-md animate-float"></div>
             <div
               className="absolute -bottom-6 -left-6 w-16 h-16 bg-accent/30 rounded-full blur-md animate-float"
               style={{ animationDelay: "1s" }}
-            ></div>
-            <div
-              className="absolute top-1/2 -right-8 w-8 h-8 bg-secondary/30 rounded-full blur-sm animate-float"
-              style={{ animationDelay: "1.5s" }}
             ></div>
           </motion.div>
         </div>
